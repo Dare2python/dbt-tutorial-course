@@ -1,0 +1,26 @@
+dbtlearn:
+  outputs:
+    dev:
+      account: fkrjarj-vb19292
+      database: AIRBNB
+      password: dbtPassword123
+      role: TRANSFORM
+      schema: DEV
+      threads: 1
+      type: snowflake
+      user: dbt
+      warehouse: COMPUTE_WH
+  target: dev
+lessons:
+  outputs:
+    dev:
+      dataset: dbt_serhii
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: inspiring-team-432509-e4
+      threads: 60
+      type: bigquery
+  target: dev
